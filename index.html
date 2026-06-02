@@ -626,7 +626,7 @@
     /* ── THEME TOGGLE BUTTON ── */
     #theme-toggle{
       position:fixed;
-      top:1.2rem;right:13rem;
+      top:1.2rem;right:1.5rem;
       z-index:9996;
       width:52px;height:52px;
       border-radius:50%;
@@ -644,9 +644,20 @@
       transform:translateY(-3px) scale(1.08);
       box-shadow:0 8px 28px rgba(196,80,106,.45);
     }
-    @media(max-width:768px){
-      #theme-toggle{top:1rem;right:11rem;width:46px;height:46px;font-size:1.1rem;}
+    @media(max-width:900px){
+      #theme-toggle{top:1rem;right:1rem;width:44px;height:44px;font-size:1rem;}
+      .nav-mobile-order{
+        display:inline-flex!important;
+        align-items:center;gap:.5rem;
+        background:var(--rose);color:#fff;
+        border:none;border-radius:40px;
+        padding:.55rem 1.2rem;
+        font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:500;
+        text-decoration:none;
+        margin-right:3.5rem;
+      }
     }
+    .nav-mobile-order{display:none;}
   </style>
 </head>
 <body>
@@ -664,6 +675,7 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="#contact" class="nav-cta">Order Now</a>
+  <a href="#contact" class="nav-mobile-order">🎂 Order</a>
 </nav>
 
 <!-- HERO -->
